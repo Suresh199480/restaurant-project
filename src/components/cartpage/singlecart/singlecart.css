@@ -1,0 +1,141 @@
+.singlecart-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+}
+
+.singlecart-container .singlecart-card-details .singlecart-card {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.singlecart-img,
+.scart-title-details,
+.scart-price-details,
+.remove-section {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.singlecart-img img,
+.scart-title-details h4,
+.scart-price-details h4,
+.remove-section img {
+    margin-top: 25px;
+}
+
+.scart-products,
+.scart-name,
+.scart-price-name,
+.remove-name,
+.quantity-name,
+.scart-title,
+.scart-price {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.quantity-section .btn {
+    display: inline-block;
+}
+
+.minus-button,
+.plus-button {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.quntity-box {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 3px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.btn .fa-minus,
+.fa-plus {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.quantity-section .btn,
+.fa-minus,
+.fa-plus {
+    cursor: pointer;
+}
+
+.remove-btn img {
+    cursor: pointer;
+}
+
+.singlecart-img img {
+    width: 75px;
+    height: 75px;
+}
+
+.scart-price,
+.scart-title {
+    color: black;
+    font-size: 18px;
+}
+
+@media(max-width:480px) {
+    .singlecart-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: -50px;
+    }
+    .singlecart-container .singlecart-card-details .singlecart-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .singlecart-img img {
+        margin-top: 0px;
+    }
+    .scart-title-details {
+        margin-top: 20px;
+    }
+    .scart-title h4 {
+        margin-top: 0px;
+        font-weight: 500;
+    }
+    .scart-price-details {
+        margin-top: 20px;
+    }
+    .scart-price h4 {
+        margin-top: 0px;
+        font-weight: 500;
+    }
+    .quantity-section {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .quantity-section .btn {
+        margin-top: 5px;
+    }
+    .remove-section {
+        margin-right: 10px;
+    }
+    .remove-section .remove-btn img {
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-bottom: 40px;
+    }
+}

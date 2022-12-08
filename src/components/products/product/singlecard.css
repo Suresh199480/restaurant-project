@@ -1,0 +1,108 @@
+.cardcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.singlecard {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .26);
+    margin-top: 30px;
+    overflow: hidden;
+    margin-left: 10px;
+    position: relative;
+}
+
+.imgcontainer img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    margin-left: 90px;
+    border-radius: 5px;
+    top: 10px;
+}
+
+.carddetails {
+    margin-top: 150px;
+}
+
+.viewitem,
+.additem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.viewitem h4,
+.additem p {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.carddetails button {
+    margin-right: 8px;
+    padding: 8px 14px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .26);
+    background-color: #fff;
+    color: darkblue;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 1s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.viewbtn:hover,
+.addbtn:hover {
+    color: #fff;
+    background-color: darkblue;
+}
+
+@media(max-width:480px) {
+    .cardcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .singlecard {
+        width: 100vw;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 0px;
+        margin-top: 0px;
+        border-top: 1px solid #000;
+    }
+    .imgcontainer img {
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    .carddetails {
+        margin-top: -30px;
+    }
+    .viewitem,
+    .additem {
+        margin-top: 25px;
+    }
+    .viewitem h4 {
+        font-weight: 500;
+        font-size: 12px;
+        margin-left: 65px;
+    }
+    .additem p {
+        margin-right: 200px;
+        font-size: 14px;
+    }
+    .carddetails button {
+        margin-right: 2px;
+        padding: 6px 14px;
+    }
+}
